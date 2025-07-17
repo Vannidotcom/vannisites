@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanni Ayiah-Mensah - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #666;
+        }
+        
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .btn-phone {
+            background: #3498db;
+            color: white;
+        }
+        
+        .btn-email {
+            background: #e74c3c;
+            color: white;
+        }
+        
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-align: center;
+        }
+        
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .achievements {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .achievement {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #3498db;
+        }
+        
+        .achievement h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 250px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>Giovanni Ayiah-Mensah</h1>
+            <p>Professional • Innovator • Leader</p>
+            <p>Passionate about excellence and driven by innovation.<br>
+            Transforming ideas into reality through dedication and expertise.</p>
+            
+            <div class="contact-buttons">
+                <a href="https://wa.me/233595541775" class="btn btn-whatsapp" target="_blank">
+                    📱 WhatsApp
+                </a>
+                <a href="tel:+233595541775" class="btn btn-phone">
+                    📞 Call Me
+                </a>
+                <a href="mailto:giovanniayiahmensah@gmail.com" class="btn btn-email">
+                    📧 Email
+                </a>
+            </div>
+        </div>
+        
+        <!-- About Section -->
+        <div class="section">
+            <h2>About Me</h2>
+            <div class="about-text">
+                <p>Welcome to my professional portfolio. I am Giovanni Ayiah-Mensah, a dedicated professional 
+                with a passion for excellence and innovation. Throughout my career, I have consistently 
+                demonstrated leadership, creativity, and a commitment to achieving outstanding results.</p>
+                
+                <p>My journey has been marked by continuous learning, professional growth, and meaningful 
+                contributions to various projects and initiatives. I believe in the power of collaboration, 
+                strategic thinking, and the importance of building lasting relationships.</p>
+                
+                <p>I am always excited about new opportunities to make a positive impact and contribute 
+                to meaningful projects. Let's connect and explore how we can work together to achieve 
+                great things.</p>
+            </div>
+        </div>
+        
+        <!-- Achievements Section -->
+        <div class="section">
+            <h2>Key Achievements</h2>
+            <div class="achievements">
+                <div class="achievement">
+                    <h3>🏆 Professional Excellence Award</h3>
+                    <p>Recognized for outstanding performance and leadership in driving innovation and achieving exceptional results.</p>
+                </div>
+                <div class="achievement">
+                    <h3>📈 Leadership Certification</h3>
+                    <p>Completed advanced leadership program focusing on strategic management and team development.</p>
+                </div>
+                <div class="achievement">
+                    <h3>🚀 Innovation Project Lead</h3>
+                    <p>Successfully led cross-functional teams to deliver groundbreaking projects with significant impact.</p>
+                </div>
+                <div class="achievement">
+                    <h3>📚 Continuous Learning</h3>
+                    <p>Completed multiple certifications in project management, digital marketing, and strategic planning.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Personal Pitch Video Section -->
+        <div class="section">
+            <h2>Personal Pitch Video</h2>
+            <div class="about-text">
+                <div id="video-container" style="text-align: center; margin: 30px 0;">
+                    <div id="video-upload-area" style="border: 2px dashed #3498db; padding: 40px; border-radius: 10px; background: #f8f9fa;">
+                        <p style="font-size: 1.2rem; margin-bottom: 20px;">📹 Upload Your Personal Pitch Video</p>
+                        <p style="color: #666; margin-bottom: 20px;">Share your story and showcase your personality</p>
+                        <input type="file" id="video-file" accept="video/*" style="display: none;" onchange="handleVideoUpload(this)">
+                        <button onclick="document.getElementById('video-file').click()" 
+                                style="background: #3498db; color: white; padding: 15px 30px; border: none; border-radius: 25px; cursor: pointer; font-size: 1rem;">
+                            Choose Video File
+                        </button>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 15px;">Supported formats: MP4, WebM, MOV (Max: 100MB)</p>
+                    </div>
+                    
+                    <video id="pitch-video" controls style="display: none; width: 100%; max-width: 600px; margin-top: 20px; border-radius: 10px;">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <h3 style="color: #2c3e50; margin-bottom: 15px;">Why a Personal Pitch Video?</h3>
+                    <ul style="text-align: left; max-width: 600px; margin: 0 auto;">
+                        <li style="margin-bottom: 10px;">✅ Showcase your personality and communication skills</li>
+                        <li style="margin-bottom: 10px;">✅ Create a more personal connection with visitors</li>
+                        <li style="margin-bottom: 10px;">✅ Stand out from other professionals</li>
+                        <li style="margin-bottom: 10px;">✅ Demonstrate your confidence and presentation abilities</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="section">
+            <h2>Get In Touch</h2>
+            <div class="about-text">
+                <p><strong>Phone/WhatsApp:</strong> +233 59 554 1775</p>
+                <p><strong>Email:</strong> giovanniayiahmensah@gmail.com</p>
+                <p><strong>Location:</strong> Ghana</p>
+                
+                <div class="contact-buttons" style="margin-top: 30px;">
+                    <a href="https://wa.me/233595541775" class="btn btn-whatsapp" target="_blank">
+                        💬 Chat on WhatsApp
+                    </a>
+                    <a href="tel:+233595541775" class="btn btn-phone">
+                        📞 Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2025 Giovanni Ayiah-Mensah. All rights reserved.</p>
+            <p>Made with ❤️ for professional excellence</p>
+        </div>
+    </div>
+    
+    <script>
+        function handleVideoUpload(input) {
+            const file = input.files[0];
+            if (file) {
+                // Check file size (100MB limit)
+                if (file.size > 100 * 1024 * 1024) {
+                    alert('File size must be less than 100MB');
+                    return;
+                }
+                
+                // Check file type
+                const allowedTypes = ['video/mp4', 'video/webm', 'video/mov', 'video/avi'];
+                if (!allowedTypes.includes(file.type)) {
+                    alert('Please select a valid video file (MP4, WebM, MOV, AVI)');
+                    return;
+                }
+                
+                // Create object URL for the video
+                const videoURL = URL.createObjectURL(file);
+                
+                // Show the video and hide upload area
+                const video = document.getElementById('pitch-video');
+                const uploadArea = document.getElementById('video-upload-area');
+                
+                video.src = videoURL;
+                video.style.display = 'block';
+                uploadArea.style.display = 'none';
+                
+                alert('Video uploaded successfully! You can now play it below.');
+            }
+        }
+    </script>
+</body>
+</html>
