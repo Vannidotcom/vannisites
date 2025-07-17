@@ -531,6 +531,18 @@
             margin-bottom: 1rem;
         }
         
+        /* Professional background image overlay */
+        #background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            opacity: 0.18;
+            background: url('personal-photo.jpg') center center/cover no-repeat;
+        }
+        
         /* Responsive Design */
         @media (max-width: 768px) {
             .nav-menu {
@@ -616,7 +628,7 @@
             
             <div class="about-content">
                 <div class="about-image">
-                    <div class="profile-img" style="background: linear-gradient(135deg, #f0f0f0 0%, #e5e5e5 100%); display: flex; align-items: center; justify-content: center; color: #999; font-size: 1rem;">Your Photo Here</div>
+                    <img src="personal-photo.jpg" alt="Giovanni Ayiah-Mensah" class="profile-img" style="object-fit: cover;" />
                 </div>
                 <div class="about-text">
                     <p>
@@ -918,10 +930,11 @@
             </div>
             
             <div class="social-links">
-                <a href="#" class="social-link">💼</a>
-                <a href="#" class="social-link">🐦</a>
-                <a href="#" class="social-link">📧</a>
-                <a href="https://wa.me/233595541775" class="social-link" target="_blank">💬</a>
+                <a href="https://www.facebook.com/giovanni.mensah.9" class="social-link" target="_blank" title="Facebook"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" style="width:24px;height:24px;"></a>
+                <a href="https://x.com/theAyiahguy" class="social-link" target="_blank" title="X"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X" style="width:24px;height:24px;"></a>
+                <a href="https://www.linkedin.com/in/giovanniayiah-mensah" class="social-link" target="_blank" title="LinkedIn"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width:24px;height:24px;"></a>
+                <a href="https://github.com/Vannidotcom" class="social-link" target="_blank" title="GitHub"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" style="width:24px;height:24px;"></a>
+                <a href="https://wa.me/233595541775" class="social-link" target="_blank" title="WhatsApp">💬</a>
             </div>
             
             <div class="footer-bottom">
