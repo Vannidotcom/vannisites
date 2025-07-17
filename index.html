@@ -231,12 +231,15 @@
         }
         
         .profile-img {
-            width: 250px;
-            height: 250px;
+            width: 320px;
+            height: 320px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #f0f0f0;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border: 6px solid #fff;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+            background: #eaeaea;
+            display: block;
+            margin: 0 auto;
         }
         
         .about-text {
@@ -583,6 +586,11 @@
 </head>
 <body>
     <div id="background-overlay"></div>
+    <!-- Top Banner Image -->
+    <div style="width:100vw; height:320px; overflow:hidden; position:relative; z-index:0;">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80" alt="Professional Banner" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.85) saturate(1.1);">
+        <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(90deg,rgba(255,255,255,0.15) 0%,rgba(0,0,0,0.25) 100%);"></div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
