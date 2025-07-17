@@ -958,35 +958,7 @@
     </footer>
 
     <script>
-        // Profile image upload handler
-        function handleProfileUpload(input) {
-            const file = input.files[0];
-            if (file) {
-                if (!file.type.startsWith('image/')) {
-                    alert('Please select a valid image file (JPG, PNG, etc.)');
-                    return;
-                }
-                if (file.size > 5 * 1024 * 1024) {
-                    alert('Image size must be less than 5MB');
-                    return;
-                }
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    document.getElementById('profile-img').src = e.target.result;
-                    localStorage.setItem('profileImage', e.target.result);
-                };
-                reader.readAsDataURL(file);
-                alert('Profile photo updated!');
-            }
-        }
-
-        // Load profile image from localStorage if available
-        document.addEventListener('DOMContentLoaded', function() {
-            const savedImg = localStorage.getItem('profileImage');
-            if (savedImg) {
-                document.getElementById('profile-img').src = savedImg;
-            }
-        });
+        // ...existing code...
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
