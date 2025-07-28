@@ -1,5 +1,3 @@
-import './App.css'
-
 export default function Logo() {
   return (
     <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary-600 shadow-lg">
@@ -26,26 +24,6 @@ export default function Logo() {
           GAM
         </text>
       </svg>
-    </div>
-  )
-}
-
-export default function App() {
-  return (
-    <div className="app-container">
-      <header className="app-header">
-        <Logo />
-        <h1 className="app-title">Welcome to My App</h1>
-      </header>
-      <main className="app-main">
-        <p className="app-description">
-          This is a sample application to demonstrate the usage of the Logo
-          component.
-        </p>
-      </main>
-      <footer className="app-footer">
-        <p className="footer-text">© 2023 My App. All rights reserved.</p>
-      </footer>
     </div>
   )
 }

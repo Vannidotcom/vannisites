@@ -1,1 +1,5 @@
-npm config set registry https://registry.npmjs.org/
+// vite.config.ts
+export default defineConfig({
+  base: '/',
+  // ...other config
+})
